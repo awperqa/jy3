@@ -1,0 +1,60 @@
+// HTMLCanvasElement
+var HTMLCanvasElement = function HTMLCanvasElement(){
+    throw new TypeError("Illegal constructor");
+};dogvm.safefunction(HTMLCanvasElement);
+
+Object.defineProperties(HTMLCanvasElement.prototype, {
+    [Symbol.toStringTag]: {
+        value: "HTMLCanvasElement",
+        configurable: true
+    }
+});
+
+HTMLCanvasElement.prototype.__proto__ = HTMLElement.prototype;
+
+// HTMLCanvasElement对象
+Object.defineProperty(HTMLCanvasElement.prototype, Symbol.toStringTag,{"value":"HTMLCanvasElement","writable":false,"enumerable":false,"configurable":true})
+Object.defineProperty(HTMLCanvasElement.prototype, "width",{"configurable":true,"enumerable":true,"get": function width_get(){},"set": function width_set(){},});
+Object.defineProperty(HTMLCanvasElement.prototype, "height",{"configurable":true,"enumerable":true,"get": function height_get(){},"set": function height_set(){},});
+Object.defineProperty(HTMLCanvasElement.prototype, "captureStream",{"configurable":true,"enumerable":true,"writable":true,"value": function captureStream(){debugger;},});dogvm.safefunction(HTMLCanvasElement.prototype.captureStream);
+Object.defineProperty(HTMLCanvasElement.prototype, "toBlob",{"configurable":true,"enumerable":true,"writable":true,"value": function toBlob(){debugger;},});dogvm.safefunction(HTMLCanvasElement.prototype.toBlob);
+
+Object.defineProperty(HTMLCanvasElement.prototype, "transferControlToOffscreen",{"configurable":true,"enumerable":true,"writable":true,"value": function transferControlToOffscreen(){debugger;},});dogvm.safefunction(HTMLCanvasElement.prototype.transferControlToOffscreen);
+Object.defineProperty(HTMLCanvasElement.prototype, "getContext",{"configurable":true,"enumerable":true,"writable":true,"value": function getContext(contextId){
+    if(contextId == "webgl" || contextId == "experimental-webgl"){
+        return WebGLRenderingContext.getWebDog();
+    }
+    if(contextId == "2d"){
+        debugger;  
+        // 建立一个 CanvasRenderingContext2D 二维渲染上下文。
+        return CanvasRenderingContext2D.create2DDog();
+    }
+    if(contextId == "webgl2"|| contextId == "experimental-webgl2"){
+        debugger;  
+        // 创建一个 WebGL2RenderingContext 三维渲染上下文对象。只在实现 WebGL 版本 2 (OpenGL ES 3.0) 的浏览器上可用。
+    }
+    if(contextId == "bitmaprenderer"){
+        debugger;  
+        // 创建一个只提供将 canvas 内容替换为指定ImageBitmap功能的ImageBitmapRenderingContext 。
+    }
+},}
+);dogvm.safefunction(HTMLCanvasElement.prototype.getContext);
+
+
+Object.defineProperty(HTMLCanvasElement.prototype, "toDataURL",{"configurable":true,"enumerable":true,"writable":true,"value": 
+    function toDataURL(){
+        debugger;
+        return "data:image/png;base64,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QGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQhQGFJkyoGSgIkQGGxBkiABKQh8H+NkcUPVYUE9AAAAABJRU5ErkJggg==";
+    },});dogvm.safefunction(HTMLCanvasElement.prototype.toDataURL);
+
+
+
+dogvm.safeproperty(HTMLCanvasElement);
+
+
+// 创建canvas
+dogvm.memory.htmlelements["canvas"] = function () {
+    var canvas = new (function () {});
+    canvas.__proto__ = HTMLCanvasElement.prototype;
+    return canvas;
+}

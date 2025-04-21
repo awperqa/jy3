@@ -1,0 +1,71 @@
+// HTMLMediaElement对象
+var HTMLMediaElement = function HTMLMediaElement(){
+    throw new TypeError("Illegal constructor");
+};dogvm.safefunction(HTMLMediaElement);
+Object.defineProperty(HTMLMediaElement, "NETWORK_EMPTY",{"configurable":false,"enumerable":true,"writable":false,"value":0,});
+Object.defineProperty(HTMLMediaElement, "NETWORK_IDLE",{"configurable":false,"enumerable":true,"writable":false,"value":1,});
+Object.defineProperty(HTMLMediaElement, "NETWORK_LOADING",{"configurable":false,"enumerable":true,"writable":false,"value":2,});
+Object.defineProperty(HTMLMediaElement, "NETWORK_NO_SOURCE",{"configurable":false,"enumerable":true,"writable":false,"value":3,});
+Object.defineProperty(HTMLMediaElement, "HAVE_NOTHING",{"configurable":false,"enumerable":true,"writable":false,"value":0,});
+Object.defineProperty(HTMLMediaElement, "HAVE_METADATA",{"configurable":false,"enumerable":true,"writable":false,"value":1,});
+Object.defineProperty(HTMLMediaElement, "HAVE_CURRENT_DATA",{"configurable":false,"enumerable":true,"writable":false,"value":2,});
+Object.defineProperty(HTMLMediaElement, "HAVE_FUTURE_DATA",{"configurable":false,"enumerable":true,"writable":false,"value":3,});
+Object.defineProperty(HTMLMediaElement, "HAVE_ENOUGH_DATA",{"configurable":false,"enumerable":true,"writable":false,"value":4,});
+Object.defineProperty(HTMLMediaElement.prototype, Symbol.toStringTag,{"value":"HTMLMediaElement","writable":false,"enumerable":false,"configurable":true})
+Object.defineProperty(HTMLMediaElement.prototype, "error",{"configurable":true,"enumerable":true,"get": function error_get(){},set:undefined, });
+Object.defineProperty(HTMLMediaElement.prototype, "src",{"configurable":true,"enumerable":true,"get": function src_get(){},"set": function src_set(){debugger;},});
+Object.defineProperty(HTMLMediaElement.prototype, "currentSrc",{"configurable":true,"enumerable":true,"get": function currentSrc_get(){},set:undefined, });
+Object.defineProperty(HTMLMediaElement.prototype, "crossOrigin",{"configurable":true,"enumerable":true,"get": function crossOrigin_get(){},"set": function crossOrigin_set(){debugger;},});
+Object.defineProperty(HTMLMediaElement.prototype, "networkState",{"configurable":true,"enumerable":true,"get": function networkState_get(){},set:undefined, });
+Object.defineProperty(HTMLMediaElement.prototype, "preload",{"configurable":true,"enumerable":true,"get": function preload_get(){},"set": function preload_set(){debugger;},});
+Object.defineProperty(HTMLMediaElement.prototype, "buffered",{"configurable":true,"enumerable":true,"get": function buffered_get(){},set:undefined, });
+Object.defineProperty(HTMLMediaElement.prototype, "readyState",{"configurable":true,"enumerable":true,"get": function readyState_get(){},set:undefined, });
+Object.defineProperty(HTMLMediaElement.prototype, "seeking",{"configurable":true,"enumerable":true,"get": function seeking_get(){},set:undefined, });
+Object.defineProperty(HTMLMediaElement.prototype, "currentTime",{"configurable":true,"enumerable":true,"get": function currentTime_get(){},"set": function currentTime_set(){debugger;},});
+Object.defineProperty(HTMLMediaElement.prototype, "duration",{"configurable":true,"enumerable":true,"get": function duration_get(){},set:undefined, });
+Object.defineProperty(HTMLMediaElement.prototype, "paused",{"configurable":true,"enumerable":true,"get": function paused_get(){},set:undefined, });
+Object.defineProperty(HTMLMediaElement.prototype, "defaultPlaybackRate",{"configurable":true,"enumerable":true,"get": function defaultPlaybackRate_get(){},"set": function defaultPlaybackRate_set(){debugger;},});
+Object.defineProperty(HTMLMediaElement.prototype, "playbackRate",{"configurable":true,"enumerable":true,"get": function playbackRate_get(){},"set": function playbackRate_set(){debugger;},});
+Object.defineProperty(HTMLMediaElement.prototype, "played",{"configurable":true,"enumerable":true,"get": function played_get(){},set:undefined, });
+Object.defineProperty(HTMLMediaElement.prototype, "seekable",{"configurable":true,"enumerable":true,"get": function seekable_get(){},set:undefined, });
+Object.defineProperty(HTMLMediaElement.prototype, "ended",{"configurable":true,"enumerable":true,"get": function ended_get(){},set:undefined, });
+Object.defineProperty(HTMLMediaElement.prototype, "autoplay",{"configurable":true,"enumerable":true,"get": function autoplay_get(){},"set": function autoplay_set(){debugger;},});
+Object.defineProperty(HTMLMediaElement.prototype, "loop",{"configurable":true,"enumerable":true,"get": function loop_get(){},"set": function loop_set(){debugger;},});
+Object.defineProperty(HTMLMediaElement.prototype, "preservesPitch",{"configurable":true,"enumerable":true,"get": function preservesPitch_get(){},"set": function preservesPitch_set(){debugger;},});
+Object.defineProperty(HTMLMediaElement.prototype, "controls",{"configurable":true,"enumerable":true,"get": function controls_get(){},"set": function controls_set(){debugger;},});
+Object.defineProperty(HTMLMediaElement.prototype, "controlsList",{"configurable":true,"enumerable":true,"get": function controlsList_get(){},"set": function controlsList_set(){debugger;},});
+Object.defineProperty(HTMLMediaElement.prototype, "volume",{"configurable":true,"enumerable":true,"get": function volume_get(){},"set": function volume_set(){debugger;},});
+Object.defineProperty(HTMLMediaElement.prototype, "muted",{"configurable":true,"enumerable":true,"get": function muted_get(){},"set": function muted_set(){debugger;},});
+Object.defineProperty(HTMLMediaElement.prototype, "defaultMuted",{"configurable":true,"enumerable":true,"get": function defaultMuted_get(){},"set": function defaultMuted_set(){debugger;},});
+Object.defineProperty(HTMLMediaElement.prototype, "textTracks",{"configurable":true,"enumerable":true,"get": function textTracks_get(){},set:undefined, });
+Object.defineProperty(HTMLMediaElement.prototype, "webkitAudioDecodedByteCount",{"configurable":true,"enumerable":true,"get": function webkitAudioDecodedByteCount_get(){},set:undefined, });
+Object.defineProperty(HTMLMediaElement.prototype, "webkitVideoDecodedByteCount",{"configurable":true,"enumerable":true,"get": function webkitVideoDecodedByteCount_get(){},set:undefined, });
+Object.defineProperty(HTMLMediaElement.prototype, "onencrypted",{"configurable":true,"enumerable":true,"get": function onencrypted_get(){},"set": function onencrypted_set(){debugger;},});
+Object.defineProperty(HTMLMediaElement.prototype, "onwaitingforkey",{"configurable":true,"enumerable":true,"get": function onwaitingforkey_get(){},"set": function onwaitingforkey_set(){debugger;},});
+Object.defineProperty(HTMLMediaElement.prototype, "srcObject",{"configurable":true,"enumerable":true,"get": function srcObject_get(){},"set": function srcObject_set(){debugger;},});
+Object.defineProperty(HTMLMediaElement.prototype, "NETWORK_EMPTY",{"configurable":false,"enumerable":true,"writable":false,"value":0,});
+Object.defineProperty(HTMLMediaElement.prototype, "NETWORK_IDLE",{"configurable":false,"enumerable":true,"writable":false,"value":1,});
+Object.defineProperty(HTMLMediaElement.prototype, "NETWORK_LOADING",{"configurable":false,"enumerable":true,"writable":false,"value":2,});
+Object.defineProperty(HTMLMediaElement.prototype, "NETWORK_NO_SOURCE",{"configurable":false,"enumerable":true,"writable":false,"value":3,});
+Object.defineProperty(HTMLMediaElement.prototype, "HAVE_NOTHING",{"configurable":false,"enumerable":true,"writable":false,"value":0,});
+Object.defineProperty(HTMLMediaElement.prototype, "HAVE_METADATA",{"configurable":false,"enumerable":true,"writable":false,"value":1,});
+Object.defineProperty(HTMLMediaElement.prototype, "HAVE_CURRENT_DATA",{"configurable":false,"enumerable":true,"writable":false,"value":2,});
+Object.defineProperty(HTMLMediaElement.prototype, "HAVE_FUTURE_DATA",{"configurable":false,"enumerable":true,"writable":false,"value":3,});
+Object.defineProperty(HTMLMediaElement.prototype, "HAVE_ENOUGH_DATA",{"configurable":false,"enumerable":true,"writable":false,"value":4,});
+Object.defineProperty(HTMLMediaElement.prototype, "addTextTrack",{"configurable":true,"enumerable":true,"writable":true,"value": function addTextTrack(){debugger;},});dogvm.safefunction(HTMLMediaElement.prototype.addTextTrack);
+Object.defineProperty(HTMLMediaElement.prototype, "canPlayType",{"configurable":true,"enumerable":true,"writable":true,"value": function canPlayType(){debugger;},});dogvm.safefunction(HTMLMediaElement.prototype.canPlayType);
+Object.defineProperty(HTMLMediaElement.prototype, "captureStream",{"configurable":true,"enumerable":true,"writable":true,"value": function captureStream(){debugger;},});dogvm.safefunction(HTMLMediaElement.prototype.captureStream);
+Object.defineProperty(HTMLMediaElement.prototype, "load",{"configurable":true,"enumerable":true,"writable":true,"value": function load(){debugger;},});dogvm.safefunction(HTMLMediaElement.prototype.load);
+Object.defineProperty(HTMLMediaElement.prototype, "pause",{"configurable":true,"enumerable":true,"writable":true,"value": function pause(){debugger;},});dogvm.safefunction(HTMLMediaElement.prototype.pause);
+Object.defineProperty(HTMLMediaElement.prototype, "play",{"configurable":true,"enumerable":true,"writable":true,"value": function play(){debugger;},});dogvm.safefunction(HTMLMediaElement.prototype.play);
+Object.defineProperty(HTMLMediaElement.prototype, "sinkId",{"configurable":true,"enumerable":true,"get": function sinkId_get(){},set:undefined, });
+Object.defineProperty(HTMLMediaElement.prototype, "remote",{"configurable":true,"enumerable":true,"get": function remote_get(){},set:undefined, });
+Object.defineProperty(HTMLMediaElement.prototype, "disableRemotePlayback",{"configurable":true,"enumerable":true,"get": function disableRemotePlayback_get(){},"set": function disableRemotePlayback_set(){debugger;},});
+Object.defineProperty(HTMLMediaElement.prototype, "setSinkId",{"configurable":true,"enumerable":true,"writable":true,"value": function setSinkId(){debugger;},});dogvm.safefunction(HTMLMediaElement.prototype.setSinkId);
+Object.defineProperty(HTMLMediaElement.prototype, "mediaKeys",{"configurable":true,"enumerable":true,"get": function mediaKeys_get(){},set:undefined, });
+Object.defineProperty(HTMLMediaElement.prototype, "setMediaKeys",{"configurable":true,"enumerable":true,"writable":true,"value": function setMediaKeys(){debugger;},});dogvm.safefunction(HTMLMediaElement.prototype.setMediaKeys);
+Object.setPrototypeOf(HTMLMediaElement.prototype, HTMLElement.prototype);
+
+
+
+dogvm.safeproperty(HTMLMediaElement);

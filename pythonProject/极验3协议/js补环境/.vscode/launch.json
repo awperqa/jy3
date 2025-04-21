@@ -1,0 +1,30 @@
+{
+    "configurations": [
+        {
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/index.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        
+        {
+            "name": "本地js文件",
+            "program": "${file}",
+            "request": "launch",
+            "type": "node"
+        },
+        {
+            "name":  "chrome无环境联调",
+            "program": "${workspaceFolder}/index.js",
+            "request": "launch",
+            "type": "node",
+            "runtimeExecutable": "node-inspect",
+
+        },
+
+    ]
+}
+
